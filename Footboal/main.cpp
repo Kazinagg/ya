@@ -29,7 +29,7 @@ int main(){
 
     // match1.matchType = 1? team1GuestsGoals = match1.team1Goals, team2GuestsGoals = match2.team2Goals : team2GuestsGoals = match1.team2Goals, team1GuestsGoals = match2.team2Goals;
     if (match1.matchType == 1) {
-        team1GuestsGoals = match1.team1Goals + ;
+        team1GuestsGoals = match1.team1Goals;
         team2GuestsGoals = match2.team2Goals;
     } else {
         team2GuestsGoals = match1.team2Goals;
@@ -67,17 +67,19 @@ int main(){
     //          if (match2.matchType == 1){
     //             cout << (match1.team2Goals + match2.team2Goals) - (match1.team1Goals + match2.team1Goals);
     //         } else if (match2.matchType == 2){
-    //             guestsGoalsDifference < goalDifference? cout << guestsGoalsDifference : cout << goalDifference;
+    //             guestsGoalsDifference < goalDifference? cout << guestsGoalsDifference : cout << goalDifference; 1 = 1 ком дома
     //         }
     //     }
     // }
 
     if (match2.matchType == 1){
-        guestsGoalsDifference < goalDifference? 
-            guestsGoalsDifference < 0? cout << 0: cout << guestsGoalsDifference : 
-            goalDifference < 0? cout << 0: cout << goalDifference;
+        goalDifference < 0? cout << 0: cout << goalDifference+1;
     } else if (match2.matchType == 2){
+        if (guestsGoalsDifference + goalDifference > 0){
             goalDifference < 0? cout << 0: cout << goalDifference;
+        } else{
+            goalDifference < 0? cout << 0: cout << goalDifference+1;
+        }
     }
     
 
