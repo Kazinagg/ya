@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Projects/ya/Проверка печати",
-      "program": "d:/Projects/ya/Проверка печати/build/Debug/outDebug",
+      "cwd": "d:/Projects/ya/Покупатель рыбы",
+      "program": "d:/Projects/ya/Покупатель рыбы/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
